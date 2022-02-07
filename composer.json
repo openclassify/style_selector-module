@@ -18,5 +18,8 @@
         "psr-4": {
             "Visiosoft\\StyleSelectorModule\\": "src/"
         }
+    },
+    "require": {
+        "visiosoft/sahibinden_style_provider-extension": "*"
     }
 }
