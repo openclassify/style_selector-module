@@ -1,6 +1,7 @@
 <?php namespace Visiosoft\StyleSelectorModule\Style\Form;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
@@ -29,5 +30,7 @@ class StyleFormHandler
         }
 
         DB::table('settings_settings')->upsert($values, 'key');
+
+        Artisan::call('assets:clear');
     }
 }
