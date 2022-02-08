@@ -15,7 +15,8 @@ class StyleFormBuilder extends FormBuilder
     ];
 
     protected $options = [
-        'form_view' => 'visiosoft.module.style_selector::form'
+        'form_view' => 'visiosoft.module.style_selector::form',
+        'redirect' => '/admin/style_selector'
     ];
 
     protected $sections = [];

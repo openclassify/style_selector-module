@@ -20,6 +20,7 @@
         }
     },
     "require": {
-        "visiosoft/sahibinden_style_provider-extension": "*"
+        "visiosoft/sahibinden_style_provider-extension": "*",
+        "visiosoft/gg_style_provider-extension": "*"
     }
 }
