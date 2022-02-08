@@ -3,5 +3,7 @@
 return [
     'title'       => 'Style Selector',
     'name'        => 'Style Selector Module',
-    'description' => ''
+    'section' => [
+        'style_selector' => 'Style Selector'
+    ],
 ];

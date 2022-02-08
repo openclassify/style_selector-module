@@ -22,10 +22,8 @@ class StyleSelectorModulePlugin extends Plugin
 
     public function getValueByType($type)
     {
-        $setting = DB::table('settings_settings')
-            ->where('key', 'visiosoft.module.style_selector::' . $type)
-            ->first();
+        $setting = setting_value('visiosoft.module.style_selector::detail');
 
-        return ($setting) ? $setting->value : null;
+        return ($setting) ? $setting : null;
     }
 }

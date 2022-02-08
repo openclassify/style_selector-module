@@ -18,7 +18,7 @@ class StyleFormHandler
 
         foreach ($builder->getPostData() as $key => $value) {
             $item = array();
-            $item['value'] = ($value == 'default') ? null : $value;
+            $item['value'] = $value;
             $item['key'] = $namespace . "::" . $key;
             $item['created_at'] = Carbon::now();
             $item['updated_at'] = Carbon::now();

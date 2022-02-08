@@ -14,7 +14,6 @@ class StyleFormBuilder extends FormBuilder
         'cancel',
     ];
 
-
     protected $options = [
         'form_view' => 'visiosoft.module.style_selector::form'
     ];
