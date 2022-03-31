@@ -51,4 +51,19 @@ class StyleSelectorModuleServiceProvider extends AddonServiceProvider
 
         return [];
     }
+
+    public function boot(AddonCollection $addonCollection)
+    {
+        $settings_url = [
+            'style_selector' => [
+                'title' => 'visiosoft.module.style_selector::addon.title',
+                'href' => url('admin/style_selector'),
+                'page' => 'anomaly.module.settings'
+            ],
+        ];
+
+        foreach ($settings_url as $key => $value) {
+            $addonCollection->get($value['page'])->addSection($key, $value);
+        }
+    }
 }
