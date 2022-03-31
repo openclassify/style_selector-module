@@ -4,7 +4,7 @@ use Anomaly\Streams\Platform\Addon\Module\Module;
 
 class StyleSelectorModule extends Module
 {
-    protected $navigation = true;
+    protected $navigation = false;
 
     protected $icon = 'fa fa-gg';
 
